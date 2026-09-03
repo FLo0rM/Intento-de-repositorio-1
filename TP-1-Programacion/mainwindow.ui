@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>MainWindow</class>
- <widget class="QMainWindow" name="Mainwindow">
+ <widget class="QMainWindow" name="MainWindow">
   <property name="enabled">
    <bool>true</bool>
   </property>
@@ -92,6 +92,13 @@
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
           <widget class="QListWidget" name="listMovimientos_2"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnSalir">
+           <property name="text">
+            <string>Salir</string>
+           </property>
+          </widget>
          </item>
          <item>
           <widget class="QPushButton" name="btnAtendidos">

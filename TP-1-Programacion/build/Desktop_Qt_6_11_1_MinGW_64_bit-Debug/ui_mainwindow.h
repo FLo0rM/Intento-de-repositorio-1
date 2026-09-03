@@ -41,19 +41,20 @@ public:
     QListWidget *listMovimientos_1;
     QHBoxLayout *horizontalLayout_2;
     QListWidget *listMovimientos_2;
+    QPushButton *btnSalir;
     QPushButton *btnAtendidos;
     QStatusBar *statusbar;
 
-    void setupUi(QMainWindow *Mainwindow)
+    void setupUi(QMainWindow *MainWindow)
     {
-        if (Mainwindow->objectName().isEmpty())
-            Mainwindow->setObjectName("Mainwindow");
-        Mainwindow->setEnabled(true);
-        Mainwindow->resize(899, 418);
-        Mainwindow->setMouseTracking(false);
-        Mainwindow->setTabletTracking(false);
-        Mainwindow->setAcceptDrops(true);
-        centralwidget = new QWidget(Mainwindow);
+        if (MainWindow->objectName().isEmpty())
+            MainWindow->setObjectName("MainWindow");
+        MainWindow->setEnabled(true);
+        MainWindow->resize(899, 418);
+        MainWindow->setMouseTracking(false);
+        MainWindow->setTabletTracking(false);
+        MainWindow->setAcceptDrops(true);
+        centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName("groupBox");
@@ -105,6 +106,11 @@ public:
 
         horizontalLayout_2->addWidget(listMovimientos_2);
 
+        btnSalir = new QPushButton(horizontalLayoutWidget_3);
+        btnSalir->setObjectName("btnSalir");
+
+        horizontalLayout_2->addWidget(btnSalir);
+
         btnAtendidos = new QPushButton(horizontalLayoutWidget_3);
         btnAtendidos->setObjectName("btnAtendidos");
 
@@ -116,24 +122,25 @@ public:
 
         horizontalLayout_3->addLayout(horizontalLayout);
 
-        Mainwindow->setCentralWidget(centralwidget);
-        statusbar = new QStatusBar(Mainwindow);
+        MainWindow->setCentralWidget(centralwidget);
+        statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
-        Mainwindow->setStatusBar(statusbar);
+        MainWindow->setStatusBar(statusbar);
 
-        retranslateUi(Mainwindow);
+        retranslateUi(MainWindow);
 
-        QMetaObject::connectSlotsByName(Mainwindow);
+        QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
 
-    void retranslateUi(QMainWindow *Mainwindow)
+    void retranslateUi(QMainWindow *MainWindow)
     {
-        Mainwindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Gesti\303\263n de guardia", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Gesti\303\263n de guardia", nullptr));
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "Usuario", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "grupo4", nullptr));
         btnAnadir->setText(QCoreApplication::translate("MainWindow", "A\303\261adir", nullptr));
         btnSiguiente->setText(QCoreApplication::translate("MainWindow", "Siguiente", nullptr));
         btnAtender->setText(QCoreApplication::translate("MainWindow", "Atender", nullptr));
+        btnSalir->setText(QCoreApplication::translate("MainWindow", "Salir", nullptr));
         btnAtendidos->setText(QCoreApplication::translate("MainWindow", "Atendidos", nullptr));
     } // retranslateUi
 

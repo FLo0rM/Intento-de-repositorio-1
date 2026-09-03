@@ -2,8 +2,9 @@
 #define MAINWINDOW_H
 
 #include "ingresopacientes.h"
+#include "paciente.h"
 #include <QMainWindow>
-#include<QQueue>
+#include <QQueue>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -36,15 +37,15 @@ private slots:
 
     void addMovimientos(QString msj);
 
+    void on_btnSalir_clicked();
+
 private:
     Ui::MainWindow *ui;
     IngresoPacientes* uiWinIngresoPacientes;
-    QQueue<QString> pacientes;
-    QQueue<QString> atendidos;
+
+    QQueue<Paciente> pacientes;
+    QQueue<Paciente> atendidos;
 
     QList<QString> movimientos; // listado de movimientos en GUI
-
-    /* Datos de ventanas secundarias*/
-   QString IngresoPacientesSelect;
 };
 #endif // MAINWINDOW_H

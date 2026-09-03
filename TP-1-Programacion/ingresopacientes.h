@@ -2,8 +2,7 @@
 #define INGRESOPACIENTES_H
 
 #include <QDialog>
-#include <QQueue>
-#include <QString>
+#include "paciente.h"
 
 namespace Ui {
 class IngresoPacientes;
@@ -17,19 +16,15 @@ public:
     explicit IngresoPacientes(QWidget *parent = nullptr);
     ~IngresoPacientes();
 
-    /* setters */
-    void setListgenero(QStringList);
-
-    /* getters */
-    QString getIngresoPacientes();
-
+    /* Setters y Getters con las firmas exactas del .cpp */
+    void setListgenero(QStringList list);
+    Paciente getIngresoPacientes();
 
 private slots:
     void on_btnAceptarG_clicked();
 
 private:
     Ui::IngresoPacientes *ui;
-    QQueue<QString> pacientes;
 };
 
 #endif // INGRESOPACIENTES_H

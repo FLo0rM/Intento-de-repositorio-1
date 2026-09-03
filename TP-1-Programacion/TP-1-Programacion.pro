@@ -15,7 +15,8 @@ SOURCES += \
 HEADERS += \
     ingresopacientes.h \
     login.h \
-    mainwindow.h
+    mainwindow.h \
+    paciente.h
 
 FORMS += \
     ingresopacientes.ui \
