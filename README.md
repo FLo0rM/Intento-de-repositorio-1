@@ -17,7 +17,7 @@ Para su codificación, primero verificamos si la "cola" posee algún elemento. E
 Si la "cola" no contiene ningún paciente, se mostrara un mensaje en la "listMovimientos_1" indicando de que la misma no posee ninguno.
 
 Explicación sobre: Mostrar la lista de pacientes que ya fueron atendidos en orden de atención
-Para la resolución del problema se colocó botón con el nombre de "Atendidos" que cuando presionamos en él, aparecerán en la "listMovimientos_2" todos los pacientes que ya fueron atendidos con su nombre, dni y género.
+Para la resolución del problema se colocó botón con el nombre de "Atendidos" que cuando presionamos en él, aparecerán en la "listMovimientos_2" todos los pacientes que ya fueron atendidos mostrando su nombre y apellido.
 
 Herramientas utilizadas
 En nuestro trabajo utilizamos QtCreator, GitHub, Draw.io y como lenguaje se utilizo C++ en en Qt.
