@@ -1,4 +1,5 @@
 Explicación sobre: Ingreso al sistema con usuario y clave
+
                  
 Explicación sobre: Carga y admisión de nuevo paciente
 Esta parte del problema fue desarrollada implementado una "cola" en la cual le cargamos cada uno de los elementos que se ingresaron en el formulario que se diseño a través de los widgets que nos ofrece el software "Qt". Se decidió realizar la carga de datos en una nueva pestaña para que haya una menor contaminación visual a la hora de completar esta tarea. Los widgets utilizados en esta nueva pestaña son: QlineEdit, Qlabel, QcomboBox, QpushButton, Qlist.
@@ -13,11 +14,11 @@ El problema fue resuelto implementado un QpushButton denominado "Siguiente" que,
 Para su codificación, primero vericamos si la "cola" posee algún elemento. En caso de que contenga algún elemento, este se guardara en una variable del tipo "QString" que luego su contenido será mostrado por pantalla en la Qlist. Si la "cola" no contiene ningún elemento, se mostrara un mensaje en la Qlist indicando de que la misma no posee ninguno.
 
 Explicación sobre: Atención del paciente
-Al igual que el problema anterior, primero verificamos que la "cola" contiene algún elemento. Caso afirmativo, guardaremos en una variable del tipo QString el primer elemento de la "cola" y, además, lo sacaremos de la misma guardandolo en una nueva "cola2" que conendra aquellos pacientes que ya fueron atendidos. Caso contrario, si la "cola" no posée elementos, se mostrara un mensaje en en la Qlist indicando que la misma ya no tiene ninguno.
+Al igual que el problema anterior, primero verificamos que la "cola" contiene algún elemento. Caso afirmativo, guardaremos en una variable del tipo QString el primer elemento de la "cola" y, además, lo sacaremos de la misma guardandolo en una nueva "cola2" que contendra aquellos pacientes que ya fueron atendidos. Caso contrario, si la "cola" no posée elementos, se mostrara un mensaje en en la Qlist indicando que la misma ya no tiene ninguno.
 
 Explicación sobre: Mostrar la lista de pacientes que ya fueron atendidos en orden de atención
-Para la resolución del problema se creo una copia 
-
+Para la resolución del problema se implemento un QpushBotton con el nombre de "atendidos", cuando presionamos en él, apareceran en la Qlist de la derecha todos los pacientes que ya fueron atendidos.
+En la lógica de esta resolución, se creo una copia de la "cola2" la cual tiene todos los pacientes atendidos, a través de un while iremos recorriendo esta copia mientras desplegamos cada uno de ellos en la Qlist de la derecha(Qlist2).
 
 Herramientas utilizadas
-En nuestro trabajo utilizamos 
+En nuestro trabajo utilizamos QtCreator, GitHub, Draw.io y como lenguaje se utilizo C++ en en Qt.
