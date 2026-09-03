@@ -15,11 +15,6 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-//999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
-void MainWindow::setUserLogin(QString usuario)
-{
-    setWindowTitle("Guardia Hospitalaria - Operador: " + usuario);
-}
 
 void MainWindow::addMovimientos(QString msj)
 {
